@@ -1,0 +1,39 @@
+.site-header {
+  background-color: #039be5;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 999;
+  width: 100%;
+  .site-title{
+  	float: left;
+  }
+  a {
+  	color: #fff;
+  	text-decoration: none;
+  	line-height: 60px;
+  }
+}
+
+/* MENU STYLES */
+
+.menu{
+	float: right;
+	li{
+		display: inline-block;
+    transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      border-color:#039be5 ;
+      &:hover{
+          border-bottom: 2px solid;
+          border-color: #fff;
+          background-color: rgba(3,155,229,0.4);
+        }
+		a{
+			font-size: 1.2em;
+			padding: 0 1em;
+		}
+	}
+}

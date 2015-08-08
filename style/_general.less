@@ -1,0 +1,111 @@
+/* GENERAL STYLES */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url('style/fonts/Roboto-Regular.ttf');
+}
+
+@font-face{
+	font-family: 'Roboto Light';
+	src: url('style/fonts/Roboto-Light.ttf');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Roboto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto Light';
+	font-weight: 300;
+}
+
+p, ul, ol{
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: normal;
+}
+
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: #039be5;
+}
+
+.screen-reader-text {
+    position: absolute;
+    left: -999em;
+}
+
+.menu-toggle{
+	display: none;
+}
+
+/* Single Post Outline */
+
+.single, .blog{
+	background-color: #fff;
+	p{
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 1.88235;
+		color:rgba(0, 0, 0, 0.7);
+		font-family: Roboto, sans-serif;
+	}
+}
+
+form{
+	padding: 1em;
+	color: #000 !important;
+}
+
+.search-field{
+	height: 2em;
+	padding: 0.5em;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid #039BE5;
+}
+
+.home{
+	background-color: #f0f0f0;
+	p{color: #fff; font-family: 'Roboto Light'}
+	#content{
+		margin: 0;
+	}
+	.search-field{
+	width: 30em;
+	background-color: transparent;
+	border-bottom: 3px solid #fff;
+	color:#fff;
+	&:-moz-placeholder{color:#fff}
+	&::-webkit-input-placeholder{color: #fff;}
+	}
+}
+
+.widget-area .search-field{
+	width:auto;
+}
+
+.search-submit, #submit{
+	padding: 1em;
+	color:#fff;
+	background-color: #039BE5;
+	border:none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
